@@ -8,8 +8,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="292dp"
         android:layout_marginHorizontal="24dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,40 +21,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/email_text"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
         <EditText
             android:id="@+id/edtEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
             style="@style/EditTextTheme"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:autofillHints=""
+            android:hint="@string/hint_edit_email"
             android:inputType="textEmailAddress"
-            android:hint="@string/hint_edit_email"/>
+            android:textColor="@color/color_default" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/password_text"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
         <EditText
             android:id="@+id/edtPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             style="@style/EditTextTheme"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
             android:layout_marginTop="4dp"
+            android:autofillHints=""
+            android:hint="@string/hint_edit_password"
             android:inputType="textPassword"
-            android:hint="@string/hint_edit_password"/>
+            android:textColor="@color/color_default" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
+            style="@style/ButtonTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/ButtonTheme"
             android:layout_marginTop="16dp"
-            android:text="@string/text_title_login_fragment"/>
+            android:text="@string/text_title_login_fragment" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -68,16 +72,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/text_button_register_login_fragment"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/btnRecover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="textEnd"
                 android:layout_weight="1"
                 android:text="@string/text_button_recover_login_fragment"
-                android:textColor="@color/white"/>
+                android:textAlignment="textEnd"
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
@@ -86,9 +90,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:indeterminateTint="@color/white"
             android:visibility="invisible"
-            tools:visibility="visible"
-            android:indeterminateTint="@color/white"/>
+            tools:visibility="visible" />
 
     </LinearLayout>
 

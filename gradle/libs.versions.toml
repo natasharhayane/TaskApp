@@ -1,5 +1,5 @@
 [versions]
-agp = "8.5.1"
+agp = "8.5.2"
 kotlin = "1.9.23"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -21,6 +21,7 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
